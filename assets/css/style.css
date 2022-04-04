@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Gotham Rounded";
+    src: url(../webfonts/gotham-rounded/GothamRounded-Medium.otf);
+}
+body{
+    font-family: "Gotham Rounded", serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3B1D71,#FEAE7B);
+}
+
+.calcolatrice{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#span1{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+#span2{
+    grid-column-start:3;
+    grid-column-end:5;
+}
+
+button{
+    font-family: "Gotham Rounded", serif;
+    padding: 1em;
+    font-size: 1.5em;
+    border: 2px solid white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ffd5c8;
+}
+
+#output{
+    overflow-wrap: break-word;
+    color: white;
+    padding: 1.3em;
+    background-color: #000000;
+    grid-column-start:1;
+    grid-column-end:5;
+    font-size: 2.7em;
+}
+
+#outputPrev{
+    width: 13em ;
+    overflow: hidden;
+    color: #ffffff70;
+    position: relative;
+    top: 50px;
+    left: 58px;
+    font-size: 2em;
+}
